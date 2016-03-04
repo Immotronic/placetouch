@@ -1,0 +1,5 @@
+{
+	"must_be_a_decimal" : "Cette valeur doit être un nombre décimal.",
+	
+	"must_be_an_int" : "Cette valeur doit être un entier."
+}

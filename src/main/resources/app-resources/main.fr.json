@@ -1,0 +1,44 @@
+{
+	"applychanges" : "Valider les changements",
+	"areyousure" : "Êtes-vous sûr ?",
+	
+	"back" : "Retour",
+	
+	"cancel" : "Annuler",
+	"checkNetworkConnection" : "Vérifiez que :<br/><ol><li>votre boitier PlaceTouch est alimenté et fonctionne correctement,</li><li>votre boitier PlaceTouch est connecté à votre réseau informatique,</li><li>le dispositif sur lequel est affiché ce message est connecté au même réseau informatique.</li></ol>Puis, rechargez cette page.",
+	"close" : "Fermer",
+	
+	"download" : "Télécharger",
+	"downloading" : "Téléchargement...",
+	"downloadUpgrade" : "Télécharger la mise à jour",
+	
+	"errorCode" : "Code d'erreur",
+	"err_internal_error" : "Une erreur interne est survenue dans le système PlaceTouch.",
+	"err_invalid_query" : "Une requête erronée a été transmise à PlaceTouch.",
+	"error404" : "Les informations demandées n'existent pas.",
+	"error500" : "Une erreur interne est survenue dans le système PlaceTouch.",
+	
+	"home" : "Accueil",
+	
+	"installation" : "Installer",
+	"installing" : "Installation...",
+	"installUpgrade" : "Installer la mise à jour",
+	
+	"anErrorOccured" : "Une erreur est survenue.",
+	
+	"networkError" : "Le système PlaceTouch ne répond pas.",
+	"newUpgrade" : "Nouvelle MAJ",
+	"newUpgradeAvailableMessage" : "Une nouvelle mise à jour du système est disponible sur les serveurs d'Immotronic. Souhaitez-vous la télécharger ?",
+	"newUpgradeAvailableTitle" : "Mise à jour disponible",
+	"newUpgradeReadyToInstallMessage" : "La mise à jour est prête à être installée. Souhaitez-vous l'installer maintenant ?",
+	"no" : "Non",	
+	
+	"reboot" : "Redémarrer",
+	"rebooting" : "Le système PlaceTouch est en cours de redémarrage. Veuillez patienter jusqu'au rafraîchissement de cette page.",
+	"rebootToFinishInstallMessage" : "L'installation de la mise à jour sera effective au prochain redémarrage de PlaceTouch. Souhaitez-vous redémarrer le boîtier PlaceTouch maintenant ?",
+
+	"settings" : "Réglages",
+	"soundLikeABug" : "Essayez de recharger cette page. Si l'erreur persiste, contactez le service après-vente d'Immotronic.",
+	
+	"yes" : "Oui" 
+}

@@ -1,0 +1,96 @@
+<cwf_title>settings_title</cwf_title>
+<div id="settings">
+	<h1 tr="systemSettings"></h1>
+	<table>
+		<tr><td colspan="3" class="title" tr="languageChoice"></td></tr>
+		<tr><td class="label mutable" tr="chooseYourLanguage"></td><td id="language" class="value mutable">
+			<select>
+				<option value="en-US">English (US)</option>
+				<option value="fr-FR">Français (FR)</option>
+			</select>
+		</td><td></td></tr>
+		<tr><td colspan="3" class="title" tr="systemStatus"></td></tr>
+		<tr><td class="label immutable" tr="boxName"></td><td id="name" class="value immutable"></td><td class="help" tr="boxNameHelp"></td></tr>
+		<tr><td class="label immutable" tr="ipAddresses"></td><td id="ipAddresses" class="value immutable"></td><td class="help" tr="ipAddressesHelp"></td></tr>
+		<tr><td class="label immutable" tr="ethernetAddresses"></td><td id="ethernetAddresses" class="value immutable"></td><td class="help" tr="ethernetAddressesHelp"></td></tr>
+		<tr><td class="label immutable" tr="internetAccess"></td><td id="internetAccess" class="value immutable"></td><td class="help" tr="internetAccessHelp"></td></tr>
+		
+		<tr><td class="label immutable" tr="natTranslation"></td><td id="natTranslation" class="value immutable"></td><td class="help" tr="natTranslationHelp"></td></tr>
+		<tr><td class="label immutable" tr="router"></td><td colspan="2" id="router" class="value immutable"></td></tr>
+		<tr><td class="label immutable" tr="externalAddress"></td><td id="externalAddress" class="value immutable"></td><td class="help" tr="externalAddressHelp"></td></tr>
+		<tr><td class="label immutable" tr="domainValidity"></td><td id="domainValidity" class="value immutable"></td><td class="help" tr="domainValidityHelp"></td></tr>
+		<!-- 
+		<tr><td class="label immutable" tr="domain"></td><td id="domain" class="value immutable"></td><td></td></tr>
+		-->
+		<tr><td class="label immutable" tr="uptime"></td><td id="uptime" class="value immutable"></td><td class="help" tr="uptimeHelp"></td></tr>
+		<tr><td class="label immutable" tr="version"></td><td id="version" class="value immutable"></td><td></td></tr>
+		<tr><td class="label immutable" tr="buildDate"></td><td id="buildDate" class="value immutable"></td><td></td></tr>
+		<tr class="embedded"><td colspan="2" class="value immutable"><button class="small" id="setSystemTime" tr="setSystemTime"></button></td></tr> 
+		 
+		<tr><td colspan="3" class="title" tr="externalAccess"></td></tr>
+		<!--<tr><td class="label mutable" tr="allowExternalAccess"></td><td class="value mutable"><input type="checkbox" id="externalAccess"/></td><td class="help" tr="allowExternalAccessHelp"></td></tr>-->
+		<tr><td class="label mutable" tr="enableAutomaticNATManagement"></td><td class="value mutable"><input type="checkbox" id="NATManagement"/></td><td class="help" tr="enableAutomaticNATManagementHelp"></td></tr>
+		<tr id="externalWebServerPortRow"><td class="label mutable" tr="externalWebServerPort"></td><td class="value mutable"><input type="text" id="externalWebServerPort" size="8"/></td><td class="help" tr="externalWebServerPortHelp"></td></tr>
+		<tr id="externalSSHPortRow"><td class="label mutable" tr="externalSSHPort"></td><td class="value mutable"><input type="text" id="externalSSHPort" size="8"/></td><td class="help" tr="externalSSHPortHelp"></td></tr>		
+		<!--
+		<tr><td colspan="3" class="title" tr="updates"></td></tr>
+		<tr><td class="label mutable" tr="allowAutomaticUpdates"></td><td class="value mutable"><input type="checkbox" id="automaticUpdates"/></td><td class="help" tr="allowAutomaticUpdatesHelp"></td></tr>
+		<tr><td colspan="3" class="title" tr="monitoringAndBackup"></td></tr>
+		<tr><td class="label mutable" tr="enableHeartbeat"></td><td class="value mutable"><input type="checkbox" id="enableHeartbeat"/></td><td class="help" tr="enableHeartbeatHelp"></td></tr>
+		<tr><td class="label mutable" tr="enableAutomaticBackup"></td><td class="value mutable"><input type="checkbox" id="automaticBackup"/></td><td class="help" tr="enableAutomaticBackupHelp"></td></tr>
+		<tr><td colspan="3" class="title" tr="userAccountInformation"></td></tr>
+		<tr id="contactEmailRow" ><td class="label mutable" tr="contactEmail"></td><td class="value mutable"><input type="text" id="contactEmail" size="40"/></td><td class="help" tr="contactEmailHelp"></td></tr>
+		<tr><td class="label mutable" tr="contactMobilePhone"></td><td class="value mutable"><input type="text" id="contactMobilePhone" size="40"/></td><td class="help" tr="contactMobilePhoneHelp"></td></tr>
+		 -->
+		 
+		 <tr class="embedded"><td colspan="3" class="title" tr="wifiConfiguration"></td></tr>
+		 <tr class="embedded" id="wifiIsUpRaw" ><td class="label immutable" tr="wifiIsUp"></td><td id="wifiIsUp" class="value immutable"></td><td class="help" tr="wifiIsUpHelp"></td></tr>
+		 <tr class="embedded" id="SSIDRaw" ><td class="label immutable" tr="SSID"></td><td id="SSID" class="value immutable"></td><td class="help" tr="SSIDHelp"></td></tr>
+		 <tr class="embedded"><td colspan="2" class="value immutable"><button class="small" id="configureWifi" tr="configureWifi"></button> <button class="small" id="forgetWifiConfiguration" tr="forgetWifiConfiguration"></button></td></tr>
+		 
+		 <tr><td colspan="3" class="title" tr="license"></td></tr>
+		 <tr id="licenseUIDRow"><td class="label mutable" tr="licenseUID"></td><td class="value mutable"><input type="text" id="licenseUID" size="30"/></td><td class="help" tr="licenseUIDHelp"></td></tr>
+		 <tr id="licenseUIDErrorRow" style="display:none;"><td colspan="3" class="error"></td></tr>
+		 <tr><td class="label immutable" tr="licenseType"></td><td id="licenseType" colspan="2" class="value immutable"></td></tr>
+		 
+		 <tr><td colspan="3" class="title" tr="customerDetails"></td></tr>
+		 <tr><td class="label immutable" tr="customerName"></td><td class="value immutable" id="customerName"></td></tr>
+		 <tr><td class="label immutable" tr="customerSiteName"></td><td class="value immutable" id="customerSiteName"></td></tr>
+		 <tr><td class="label immutable" tr="customerGatewayId"></td><td class="value immutable" id="customerGatewayId"></td></tr>
+
+		  
+		 <tr><td colspan="3" class="title" tr="usernameAndPassword"></td></tr>
+		 <tr><td colspan="2" class="value immutable"><button class="small" id="changeUsernameAndPassword" tr="changeUsernameAndPassword"></button></td></tr>
+		 <tr><td colspan="3" class="title" tr="diagnostics"></td></tr>
+		 <tr><td colspan="2" class="value immutable"><button class="small" id="displayDiagnosticsUI" tr="seeDiagnostics"></button></td></tr>
+		 <tr><td colspan="3" class="title" tr="systemShutdown"></td></tr>
+		 <tr><td colspan="2" class="value immutable"><button class="small" id="systemShutdown" tr="shutdownTheSystem"></button>&nbsp;&nbsp;&nbsp;<button class="small" id="systemReboot" tr="rebootTheSystem"></button></td></tr>
+	</table>
+	<div id="changePasswordDialog" style="display:none" title="changeUsernameAndPassword">
+		<table>
+			<tr><td class="label" tr="username"></td><td class="value"><input type="text" size="20" id="username"></input></td></tr>
+			<tr><td class="label" tr="newPassword"></td><td class="value"><input type="password" size="20" id="newPassword"></input></td></tr>
+			<tr><td class="label" tr="newPasswordConf"></td><td class="value"><input type="password" size="20" id="newPasswordConf"></input></td></tr>
+			<tr><td></td></tr>
+			<tr><td class="label" tr="oldPassword"></td><td class="value"><input type="password" size="20" id="oldPassword"></input></td></tr>
+		</table>
+	</div>
+	<div id="configureWifiDialog" style="display:none" title="configureWifi">
+		<table>
+			<tr><td class="label" tr="wifiSecurity"></td><td class="value"><select id="newWifiSecurity"><option value="WPA">WPA</option><option value="WEP">WEP</option></select></td></tr>
+			<tr><td class="label" tr="SSID"></td><td class="value"><input type="text" size="30" id="newSSID"></input></td></tr>
+			<tr><td class="label" tr="passphrase"></td><td class="value"><input type="text" size="30" id="newPassphrase"></input></td></tr>
+			<tr><td class="label" tr="hiddenSSID"></td><td class="value"><input type="checkbox" id="hiddenSSID"/></td></tr>
+		</table>
+	</div>
+	<div id="forgetWifiConfigurationDialog" style="display:none" title="forgetWifiConfiguration">
+		<span tr="forgetWifiConfigurationConfirm"></span>
+	</div>
+	<div id="setSystemTimeDialog" style="display:none" title="setSystemTime">
+		<table>
+			<tr><td class="label" tr="date"></td><td class="value"><input class="setTime" type="text" size="2" maxlength="2" id="date1"/> / <input class="setTime" type="text" size="2" maxlength="2" id="date2"/> / <input class="setTime" type="text" size="4" maxlength="4" id="date3"/></td></tr>
+			<tr><td class="label" tr="time"></td><td class="value"><input class="setTime" type="text" size="2" maxlength="2" id="time1"/> : <input class="setTime" type="text" size="2" maxlength="2" id="time2"/></td></tr>
+		</table>
+	</div>
+	<div id="errorMessageDialog" style="display:none" title="error"><img src="img/error.png"><span id="errorMessage"></span></div>
+</div>

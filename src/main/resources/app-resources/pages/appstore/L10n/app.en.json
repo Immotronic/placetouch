@@ -1,0 +1,37 @@
+{
+	"actuators" : "Actuators",
+	
+	"by" : "by",
+	
+	"category" : "Category",
+	
+	"description" : "Description",
+	
+	"details" : "Details",
+	
+	"installed" : "Installed",
+	
+	"installit" : "Install it",
+	
+	"home" : "Home",
+	
+	"languages" : "Languages",
+	
+	"placetouchVersion" : "PlaceTouch",
+	
+	"quantity" : "Quantity",
+	
+	"requirements" : "Requirements",
+	
+	"screenshots": "Screenshots",
+	
+	"sensors" : "Sensors",
+	
+	"type" : "Type",
+	
+	"updated" : "Updated",
+	
+	"vendor" : "Vendor",
+	
+	"version" : "Version"
+}

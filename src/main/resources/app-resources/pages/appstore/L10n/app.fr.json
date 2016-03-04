@@ -1,0 +1,37 @@
+{
+	"actuators" : "Récepteurs",
+	
+	"by" : "par",
+	
+	"category" : "Catégorie",
+	
+	"description" : "Description",
+	
+	"details" : "Détails",
+	
+	"installed" : "Installée",
+	
+	"installit" : "Installer",
+	
+	"home" : "Accueil",
+	
+	"languages" : "Langues",
+	
+	"placetouchVersion" : "PlaceTouch",
+	
+	"quantity" : "Quantité",
+	
+	"requirements" : "Requis",
+	
+	"screenshots": "Copies d'écran",
+	
+	"sensors" : "Emetteurs",
+	
+	"type" : "Type",
+	
+	"updated" : "Mise à jour",
+	
+	"vendor" : "Vendeur",
+	
+	"version" : "Version"
+}

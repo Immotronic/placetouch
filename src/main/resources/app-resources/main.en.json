@@ -1,0 +1,44 @@
+{
+	"applychanges" : "Apply changes",
+	"areyousure" : "Are you sure ?",
+	
+	"back" : "Back",
+	
+	"cancel" : "Cancel",
+	"checkNetworkConnection" : "You should check that :<br/><ol><li>your Placetouch system is powered up and running,</li><li>your Placetouch system is connected to your network,</li><li>the device you are using to see this user-interface is connected to the same network.</li></ol>Then, refresh this page.",
+	"close" : "Close",
+	
+	"download" : "Download",
+	"downloading" : "Downloading...",
+	"downloadUpgrade" : "Download the upgrade",
+	
+	"errorCode" : "Error code",
+	"err_internal_error" : "An internal error occurred in the Placetouch system.",
+	"err_invalid_query" : "An erroneous query was sent to the Placetouch API.",
+	"error404" : "The requested information could not be retrieved.",
+	"error500" : "An internal error occurred in the Placetouch system.",
+	
+	"home" : "Home",
+	
+	"installation" : "Install",
+	"installing" : "Installing...",
+	"installUpgrade" : "Install the upgrade",
+	
+	"anErrorOccured" : "An error occurred.",
+	
+	"networkError" : "Placetouch system is NOT reachable.",
+	"newUpgrade" : "New upgrade",
+	"newUpgradeAvailableMessage" : "A new upgrade is available on Immtronic servers. Do you wish to download it ?",
+	"newUpgradeAvailableTitle" : "Upgrade available",
+	"newUpgradeReadyToInstallMessage" : "The upgrade is ready to be installed. Do you wish to do it now ?",
+	"no" : "No",	
+	
+	"reboot" : "Reboot",
+	"rebooting" : "The PlaceTouch system is rebooting. Please, wait until this page refresh.",
+	"rebootToFinishInstallMessage" : "The upgrade installation will be effective on the next restart of PlaceTouch. Do you with to restart your PlaceTouch box right now ?",
+
+	"settings" : "Settings",
+	"soundLikeABug" : "Try to refresh this page. If this error remains, contact the technical assistance.",
+	
+	"yes" : "Yes" 
+}

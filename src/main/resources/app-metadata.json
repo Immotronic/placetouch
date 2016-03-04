@@ -1,0 +1,1 @@
+{"uid":"${project.organization.name}/${project.name}", "vendor":"${project.organization.name}", "name":"${project.name}", "version":"${project.version}", "build":"${buildNumber}"}

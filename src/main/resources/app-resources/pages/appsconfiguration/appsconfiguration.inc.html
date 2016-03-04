@@ -1,0 +1,30 @@
+<cwf_title>appsconfiguration_w_title</cwf_title>
+<div class="errorbox" id="bundleOperationError"  style="display:none"></div>
+<div id="appsconfiguration"></div>
+<div id="appInfoPanelBackground">
+	<div id="appInfoPanel">
+		<img id="appBigIcon" src=""/>
+		<h1 id="appName"></h1>
+		<div><span class="label" tr="version"></span><span id="version"></span></div>
+		<div><span class="label" tr="vendor"></span><span id="vendor"></span></div>
+		<br/>
+		<div><span class="label" tr="status"></span><span id="appStatus"></span></div>
+		<div><span class="label" tr="uptime"></span><span id="appUptime"></span></div>
+		<img id="closeButton" src="img/cancel.png"/>
+		
+		<div id="buttonBar">
+			<img id="loader" src="img/loading_default.gif" style="display:none"/>
+			<span id="buttons">
+				<span id="stop" class="button white"><img src="img/stop.png"/><span  tr="stop"></span></span>
+				<span id="start" class="button white"><img src="img/play.png"/><span  tr="start"></span></span>
+				<span id="uninstall" class="button white"><img src="img/delete.png"/><span  tr="uninstall"></span></span>
+				<span id="configure" class="button white"><img src="img/wrench.png"/><span  tr="configure"></span></span>
+			</span><br/>
+			<div class="confirmationbox" id="dropConfirmation" style="display:none">
+				<span tr="areyousure"></span><br/><br/>
+				<input type="button" id="action" tr="stop">
+				<input type="button" id="cancel" tr="cancel">
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,39 @@
+{
+	"added" : "Ajouté",
+	"addingItem" : "Ajout du dispositif...",
+	"addItem" : "Ajouter le dispositif",
+	"addItemUIs" : "Ajout manuel",
+	
+	"capabilities" : "Capacités",
+	"close" : "Fermer",
+	"configurationUIs": "Configuration",
+	
+	"dropIt": "Supprimer",
+	"dropItem" : "Supprimer le dispostif",
+	
+	"enterPairingMode": "Mode d’appairage",
+	"enterPairingModeHelp_1" : "Pour ajouter de nouveaux dispositifs, activez le mode d'appairage.<br>Pour obtenir plus d'informations sur un dispositif, cliquez sur son icône dans la liste. ",
+	"enterPairingModeHelp_2" : "Pour appairer vos émetteurs avec Placetouch, suivez-les instructions ci-dessous :",
+	"exitPairingMode": "Sortir du mode d’appairage",
+	
+	"itemAddedFeedback" : "Votre dispositif a été correctement appairé avec Placetouch.",
+	"itemAddFailedFeedback" : "La tentative d'appairage a échoué pour la raison suivante :",
+	"itemControl" : "Contrôle",
+	"itemData" : "Dernières données reçues",
+	"itemDetails" : "Détails sur le dispostif",
+	"itemProperties" : "Propriétés",
+	
+	"loadingValue" : "Chargement de la valeur courante...",
+	"location": "Localisation",
+	
+	"name" : "Nom",
+	"newItemsTitle" : "Dispositifs découverts",
+	"noDataAvailable" : "Aucune donnée n'est disponible pour l'instant",
+	
+	"properties" : "Propriétés",
+	
+	"uid" : "Identifiant unique",
+	"updateItem" : "Mettre à jour le dispositif",
+	
+	"wsn_title" : "Placetouch / WSN"
+}

@@ -1,0 +1,39 @@
+{
+	"added" : "Added",
+	"addingItem" : "Adding item...",
+	"addItem" : "Add Item",
+	"addItemUIs" : "Manual adding",
+	
+	"capabilities" : "Capabilities",
+	"close" : "Close",
+	"configurationUIs": "Configuration",
+	
+	"dropIt": "Drop it",
+	"dropItem" : "Drop Item",
+	
+	"enterPairingMode": "Enter Pairing Mode",
+	"enterPairingModeHelp_1" : "To add new devices, activate the pairing mode. Or select an item icon in the list to get more details about it.",
+	"enterPairingModeHelp_2" : "To pair your devices with PlaceTouch, see instructions below for each supported technologies:",
+	"exitPairingMode": "Exit Pairing Mode",
+	
+	"itemAddedFeedback" : "Your item was successfully paired with PlaceTouch.",
+	"itemAddFailedFeedback" : "This pairing attempt failed for the following reason:",
+	"itemControl" : "Control",
+	"itemData" : "Last known data",
+	"itemDetails" : "Item details",
+	"itemProperties" : "Properties",
+	
+	"loadingValue" : "Loading current value...",
+	"location": "Location",
+	
+	"name" : "Name",
+	"newItemsTitle" : "Discovered items",
+	"noDataAvailable" : "There is no available data yet",
+	
+	"properties" : "Properties",
+	
+	"uid" : "Unique ID",
+	"updateItem" : "Update Item",
+	
+	"wsn_title" : "Placetouch / WSN"
+}

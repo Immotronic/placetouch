@@ -1,0 +1,33 @@
+{
+	"build" : "Build",
+	
+	"diagnostics_title" : "Placetouch / Diagnostics",
+	
+	"enocean" : "EnOcean",
+	"enoceanInfo" : "EnOcean informations",
+	"enoceanLogs" : "EnOcean logs",
+	
+	"generalInfo" : "General informations",
+	
+	"internetAccess" : "Internet access",
+	
+	"ipAddresses" : "IP addresses",
+	
+	"journal" : "Journal",
+	
+	"logs" : "Logs",
+	
+	"name" : "Name",
+	"noResult" : "There is no system event to print for now.", 
+	
+	"pastBootsLogs" : "See logs of the last boots",
+	"pastDayslogs" : "See logs of the last 7 days.",
+	
+	"system": "System",
+	"systemEvents": "System events",
+	"systemDiagnostics" : "System diagnostics",
+	
+	"uptime" : "Uptime",
+	
+	"version" : "Version"
+}

@@ -1,0 +1,98 @@
+<cwf_title>wsn_title</cwf_title>
+<div id="wsn">
+	<div class="leftCol" id="items">
+	</div>
+	<div class="leftCol" id="newItems">
+	</div>
+	<div id="configurationUIs" class="leftCol collapsibleContainer">
+		<h1 tr="configurationUIs"></h1>
+		<div></div>
+	</div>
+	<div id="detailPanel">
+		<span class="button white" tr="enterPairingMode" id="EnterPairingModeButton"></span>
+		<span class="button white" tr="exitPairingMode" id="ExitPairingModeButton" style="display:none"></span>
+		<img class="button white" id="pemConfigurationButton" src="img/wrench.png"/>
+		<span class="button white" tr="close" id="CloseConfigurationModeButton" style="display:none"></span>
+		<br/><br/>
+		<div>
+			<div class="quickhelp small" tr="enterPairingModeHelp_1" id="wsnHelp"></div>
+			<div class="quickhelp small" id="pairingHelp" style="display:none"><div tr="enterPairingModeHelp_2" ></div><div id="mashup"></div></div>
+			<div class="itemDetails" id="newItemDetails" style="display:none">
+				<h1 tr="itemDetails"></h1>
+				<table class="editpanel">
+					<tr>
+						<td class="label" tr="uid"></td><td id="itemUID"></td>
+					</tr>
+					<tr>
+						<td class="label" tr="capabilities"></td><td id="capabilities"></td>
+					</tr>
+					<tr>
+						<td class="label" tr="name"></td><td class="value"><input type="text" id="itemName"></td>
+					</tr>
+					<tr>
+						<td class="label" tr="location"></td><td class="value"><input type="text" id="itemLocation"></td>
+					</tr>
+				</table>
+				<div class="buttons">
+					<input type="button" class="small" id="addItem" tr="addItem">
+					<input type="button" class="small" id="dropNewItem" tr="dropItem">
+				</div>
+				<div id="loading" style="display:none">
+					<div tr="addingItem"></div>
+					<img src="img/loading_default.gif" width="32" height="32">
+				</div>
+			</div>
+			<div id="addItemMashupUIs" class="itemDetails collapsibleContainer" style="display:none">
+				<h1 tr="addItemUIs"></h1>
+				<div></div>
+			</div>
+			<div id="addItemFeedbackOk" tr="itemAddedFeedback" style="display:none"></div>
+			<div id="addItemFeedbackFailed" style="display:none"><div tr="itemAddFailedFeedback"></div><div id="reason"></div><div id="closeButtonDiv"><span class="button small white" tr="close"></span></div></div>
+			<div class="itemDetails" id="itemDetails" style="display:none">
+				<input type="hidden" id="htmlID"></input>
+				<h1 tr="itemDetails"></h1>
+				<table class="editpanel">
+					<tr>
+						<td class="label" tr="uid"></td><td id="itemUID"></td>
+					</tr>
+					<tr>
+						<td class="label" tr="capabilities"></td><td><div id="capabilities"></div></td>
+					</tr>
+					<tr>
+						<td class="label" tr="name"></td><td class="value"><input type="text" id="itemName"></td>
+					</tr>
+					<tr>
+						<td class="label" tr="location"></td><td class="value"><input type="text" id="itemLocation"></td>
+					</tr>
+				</table>
+				<div class="buttons">
+					<input type="button" class="critical small" id="dropItem" tr="dropItem">
+				</div>
+				<div class="confirmationbox" id="dropConfirmation" style="display:none">
+					<span tr="areyousure"></span>
+					<input type="button" class="small" id="dropIt" tr="dropIt">
+					<input type="button" class="small" id="cancel" tr="cancel">
+				</div>
+				<div id="properties" style="display:none">
+					<h2 tr="itemProperties"></h2>
+					<table class="editpanel">
+					</table>
+				</div>
+				<div id="itemValue">
+					<h2 tr="itemData"></h2>
+					<div id="loading" style="display:none">
+						<div tr="loadingValue"></div>
+						<img src="img/loading_default.gif" width="32" height="32">
+					</div>
+					<div id="noData" tr="noDataAvailable"></div>
+					<div id="value">
+					</div>
+				</div>
+				<div id="itemControl">
+					<h2 tr="itemControl"></h2>
+					<div></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

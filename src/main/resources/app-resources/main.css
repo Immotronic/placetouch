@@ -1,0 +1,1308 @@
+
+/*
+ * Page Global Layout
+ * ------------------
+ */
+
+BODY {
+	margin: 0px;
+	font-family: Helvetica, Arial, Verdana, sans-serif;
+ 	font-size: 10pt;
+}
+
+TABLE {
+	font-size: 10pt;
+}
+
+#header > #content, #navigation > #content, #workspace > #content, #footer > #content {
+	margin: 0px auto;
+	width: 940px;
+	min-width: 940px;
+	width: 90%;
+}
+
+#header {
+	border-bottom: 1px solid #DEDCE1;
+}
+
+#workspace {
+	min-height: 470px;
+}
+
+#workspace>#content {
+	margin-bottom: 5px;
+}
+
+#footer {
+	border-top: 1px solid #DEDCE1;
+}
+
+/*===============================================================================================*/
+
+/*
+ * General Style
+ * -------------
+ */
+CWF_TITLE {
+	display: none;
+}
+
+A {
+	font-weight: bold;
+	text-decoration: none;
+}
+
+A:hover {
+	text-decoration: underline;
+}
+
+LABEL, .label {
+	color: #979b9c;
+	font-weight: bold;
+}
+
+LABEL:after, .label:after {
+	content: ": ";
+}
+
+TD.label {
+	vertical-align: top;
+	text-align: right;
+	white-space: nowrap;
+}
+
+.warning {
+	font-weight: bold;
+	color: #e18043;
+}
+
+.critical {
+	color: red;
+	font-weight: bold;
+}
+
+HR {
+	border: 0px;
+	width: 100%;
+	clear: both; /*mandatory for firefox. Not necessary for Chrome*/
+}
+
+.confirmationbox {
+	text-align: center;
+	padding: 5px;
+	background: #e29f8c;
+}
+
+.button, BUTTON, INPUT[type=button] {
+	display: inline-block;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	/*margin:2px;*/
+	padding: 2px 10px;
+	text-shadow: 0 1px 1px rgba(0,0,0,.3);
+	border-radius: 8px;
+	box-shadow: 0px 0px 6px 0px #979b9c;
+	font-size: 1.6em;
+	font-weight: bold;
+	border: 0px;
+}
+
+.button.small, BUTTON.small, INPUT[type=button].small {
+	font-size: 1.0em;
+	padding: 2px 2px;
+	border-radius: 4px;
+	box-shadow: 0px 0px 3px 0px #979b9c;
+	text-shadow: none;
+}
+
+.button > IMG {
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+.button > SPAN {
+	vertical-align: middle;
+}
+
+.button:hover, BUTTON:hover, INPUT[type=button]:hover {
+	text-decoration: none;
+}
+
+.button:active, BUTTON:active, INPUT[type=button]:active {
+	position: relative;
+	top: 1px;
+	box-shadow: 0px 0px 6px 0px #979b9c inset;
+}
+
+.button.deactivated, BUTTON.deactivated, INPUT[type=button][disabled=disabled], .button.deactivated:active, BUTTON.deactivated:active, INPUT[type=button][disabled=disabled]:active {
+	position: inherit;
+	box-shadow: 0px 0px 6px 0px #979b9c inset;
+}
+
+.button.deactivated IMG {
+	opacity: .3;
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++*
+ * Sheet WHITE skin (this is default skin) *
+ *+++++++++++++++++++++++++++++++++++++++++*/
+
+.white, .button, BUTTON, INPUT[type=button] {
+	color: #606060;
+	/*border: solid 1px #B3B3B3;*/
+	background: #FFFFFF;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ededed));
+	background: -moz-linear-gradient(top,  #ffffff,  #ededed);
+}
+.white:hover, .button:hover, BUTTON:hover, INPUT[type=button]:hover {
+	background: #E6E6E6;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#dcdcdc));
+	background: -moz-linear-gradient(top,  #ffffff,  #dcdcdc);
+}
+.white:active, .button:active, BUTTON:active, INPUT[type=button]:active {
+	color: #999999;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ffffff));
+	background: -moz-linear-gradient(top,  #ededed,  #ffffff);
+}
+
+.white.deactivated, .white.deactivated:hover, .white.deactivated:active,
+.button.deactivated, BUTTON.deactivated, INPUT[type=button][disabled=disabled],
+.button.deactivated:hover, BUTTON.deactivated:hover, INPUT[type=button][disabled=disabled]:hover,
+.button.deactivated:active, BUTTON.deactivated:active, INPUT[type=button][disabled=disabled]:active {
+	color: #999999;
+	background: #FFFFFF;
+	background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ededed));
+	background: -moz-linear-gradient(top,  #ffffff,  #ededed);
+}
+
+/*+++++++++++++++++++++++++++++++++
+ * Sheet GREEN skin
+ *++++++++++++++++++++++++++++++++*/
+
+.green {
+	color: #ffffff;
+	/*border: solid 1px #B3B3B3;*/
+	background: #FFFFFF;
+	background: -webkit-gradient(linear, left top, left bottom, from(#529102), to(#149100));
+	background: -moz-linear-gradient(top,  #529102,  #149100);
+}
+.green:hover {
+	background: #ffffff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#529102), to(#199150));
+	background: -moz-linear-gradient(top,  #529102,  #199150);
+}
+.green:active {
+	color: #ffffff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#199150), to(#529102));
+	background: -moz-linear-gradient(top,  #199150,  #529102);
+}
+
+.green.deactivated, .green.deactivated:hover, .green.deactivated:active {
+	color: #eaeaea;
+	background: #FFFFFF;
+	background: -webkit-gradient(linear, left top, left bottom, from(#529102), to(#149100));
+	background: -moz-linear-gradient(top,  #529102,  #149100);
+}
+
+ .networkError {
+ 	margin: 100px auto;
+ 	padding: 20px;
+ 	width: 500px;
+ 	background-color: #f97d7b;
+ 	border-radius: 8px;
+ 	box-shadow: 0px 0px 20px 0px #979b9c;
+ }
+ 
+ .networkError .label {
+ 	color: #000000;
+ }
+ 
+ .networkError .helpmsg { 
+ 	margin-top: 20px;
+ 	font-size: 1.4em;
+ }
+ 
+ .networkError .opthelpmsg {
+ 	font-size: 1.0em;
+ }
+ 
+ .c_errmsg {
+	background-color: #f8221a;
+	color: #ffffff;
+	font-weight: bold;
+	border-bottom: 15px solid white;
+ }
+ 
+ INPUT.unsaved {
+ 	background-color: #f4d57e; /*Cantaloupe*/ 
+ } 
+ 
+.dialog-with-no-title .ui-dialog-titlebar {
+    display:none;
+}
+
+.errorMessageDialog .ui-dialog-titlebar {
+	background: #fef1ec;
+	border: 1px solid #cd0a0a;
+	color: #cd0a0a;
+}
+
+.errorMessageDialog .ui-dialog-content > IMG {
+	vertical-align: middle;
+}
+
+.errorMessageDialog .ui-dialog-content > SPAN {
+	margin-left: 10px;
+	font-weight: bold;
+}
+
+.left-align {
+	text-align: left;
+}
+
+.right-align {
+	text-align: right;
+}
+
+.center-align {
+	text-align: center;
+}
+
+/*===============================================================================================*/
+
+/*
+ * Header Style
+ * ------------
+ */
+ 
+ #header {
+ 	padding: 10px 0px;
+ 	background-color: #DEDCE1;
+ 	text-align: center;
+ 	box-shadow: 0px 0px 10px 0px #979b9c inset; 
+ }
+ 
+ #header  #datetime {
+ 	font-weight: bold;
+ }
+ 
+ #header #backbuttonContainer {
+ 	float: left;
+ 	min-width: 98px;
+ 	height: 79px;
+ 	line-height: 75px;
+ 	margin-right: 72px; /* Depend of the default loader with + its right margin. See #default_loader below.*/
+ }
+ 
+ #header #backbutton { 
+ 	display: none;
+ }
+ 
+ #header #immlogo { 
+ 	float: right;
+ 	margin: 10px 0px;
+ }
+ 
+ #header DIV#defaultLoader {
+ 	float: right;
+ 	margin-right: 40px;
+ 	width: 32px;
+ 	height: 79px;
+ }
+
+ 
+ #header IMG#defaultLoader {
+ 	margin: 23px 0px;
+ 	height: 32px;
+ 	width: 32px;
+ }
+ 
+ /*===============================================================================================*/
+
+/*
+ * Quick Help Style
+ * ---------------- 
+ */
+ 
+ .quickhelp {
+ 	padding: 10px 5px 5px 30px;
+ 	background:#dbecf6 url('img/info.png') no-repeat 0px 3px;
+	font-style: italic;
+	color: blue;
+ }
+ 
+ .quickhelp.topbar {
+ 	width: 100%;
+ 	padding: 5px 0px;
+ 	background:#dbecf6;
+ 	text-align: center;
+ 	display: none;
+ }
+ 
+ .quickhelp.topbar > IMG {
+ 	vertical-align: middle;
+ }
+ 
+ .quickhelp.topbar > SPAN {
+ 	vertical-align: middle;
+ }
+ 
+ TD.help {
+ 	padding: 5px;
+ 	font-size: 1.0em;
+ 	font-style: italic;
+ 	background-color: #fdea9d;
+ 	border-left: 1px solid #edb055;
+ 	vertical-align: top;
+ }
+
+ 
+ /*===============================================================================================*/
+
+/*
+ * Footer Style
+ * ------------
+ */
+ 
+ #footer > #content {
+ 	margin-top: 5px;
+ 	text-align: center;
+ 	color: #979b9c;
+ }
+ 
+ #footer > #content A {
+ 	color: #717576;
+ }
+ 
+ /*===============================================================================================*/
+
+/*
+ * General App Icon Style
+ * ----------------------
+ */
+ 
+ DIV.appicon {
+ 	float: left;
+ 	
+ 	min-width: 100px;
+ 	width: 100px;
+ 	max-width: 100px;
+ 	
+ 	min-height: 100px;
+ 	height: 100px;
+ 	max-height: 100px;
+ 	
+ 	margin: 20px 39px;
+ 	padding-top: 8px;
+ 	text-align: center;
+ 	font-weight: bold;
+ 	overflow: hidden;
+ 	text-overflow: ellipsis;
+ 	cursor: pointer;
+ }
+ 
+ DIV.appicon A {
+ 	color: #717576;
+ }
+ 
+ DIV.appicon IMG {
+	width: 76px;
+	height: 76px;
+	box-shadow: 0px 0px 8px 1px #C2CBCE;
+	border-radius: 10px;
+	margin-bottom: 4px;
+}
+ 
+ DIV.appicon.paused {
+ 	opacity: .3;
+ }
+ 
+ /*===============================================================================================*/
+
+/*
+ * Home Style
+ * ----------
+ */
+ 
+ DIV#home {
+ 	margin: auto;
+ 	width: 900px;
+ }
+ 
+ DIV.menuicon {
+ 	float: left;
+ 	width: 195px;
+ 	height: 190px;
+ 	/*margin: 90px 10px 0px 10px;*/
+ 	margin: 20px 45px 30px 45px;
+ 	padding: 5px;
+ 	font-weight: bold;
+ 	font-size: 1.2em;
+ 	text-align: center;
+ }
+ 
+ DIV.diagnosticsLink {
+ 	margin: 30px; /* 140px*/
+ 	text-align: center;
+ }
+ 
+ DIV.diagnosticsLink A {
+ 	color: #717576;
+ }
+ 
+ /*===============================================================================================*/
+
+/*
+ * Apps Style
+ * ----------
+ */
+ #publicapps {
+ 	height: 460px;
+ 	overflow-x: hidden;
+ 	overflow-y: auto;
+ }
+ 
+ 
+ #publicapps DIV.appicon {
+
+ }
+ 
+ /*===============================================================================================*/
+
+/*
+ * AppsConfiguration Style
+ * -----------------------
+ */
+ 
+ #appsconfiguration {
+ 	height: 460px;
+ 	overflow-x: hidden;
+ 	overflow-y: auto;
+ 	background:url('img/configure_bg.png');
+ }
+ 
+ 
+ #appsconfiguration DIV.appicon A {
+ 	color: #000000;
+ }
+ 
+ #appsconfiguration DIV.appicon IMG {
+	vertical-align: top;
+ }
+ 
+DIV#bundleOperationError.errorbox {
+	margin: 10px 0px;
+	padding: 10px 5px;
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.4em;
+	background-color: #f97d7b;
+ 	border-radius: 8px;
+ 	box-shadow: 0px 0px 20px 0px #979b9c;
+}
+ 
+ #appInfoPanelBackground {
+ 	position: absolute;
+ 	top: 0px;
+ 	left: 0px;
+ 	width: 100%;
+ 	height: 100%;
+ 	background-color: rgba(255, 255, 255, .7);
+ 	display: none;
+ }
+ 
+ #appInfoPanel {
+ 	width: 480px;
+ 	margin: 150px auto 0px auto;
+ 	padding: 10px;
+ 	background-color: #ffffff;
+ 	border-radius: 8px;
+ 	box-shadow: 0px 0px 20px 0px #979b9c;
+ 	display: none;
+ }
+ 
+ #appInfoPanel .paused {
+ 	color: #f9941a;
+ 	font-weight: bold;
+ }
+ 
+ #appInfoPanel .running {
+ 	color: #149100;
+ 	font-weight: bold;
+ }
+ 
+ #appInfoPanel IMG#closeButton {
+ 	float: right;
+ 	position: relative;
+ 	top: -150px;
+	left: 35px;
+ }
+ 
+ #appInfoPanel>IMG {
+  	float: left;
+  	margin-right: 10px;
+  	box-shadow: 0px 0px 8px 1px #C2CBCE;
+	border-radius: 10px;
+ }
+  
+ #appInfoPanel>H1 {
+  	margin-top: 0px;
+  	font-size: 2.0em;
+ }
+
+ #appInfoPanel>#buttonBar {
+  	clear: both;
+  	text-align: right;
+ }
+ 
+ #appInfoPanel>#buttonBar .confirmationbox {
+ 	margin-top: 10px;
+ 	padding: 10px 0px;
+ }
+ 
+ #appInfoPanel>#buttonBar .confirmationbox>SPAN {
+ 	font-size: 1.2em;
+ 	font-weight: bold;
+ }
+ 
+ #appInfoPanel>#buttonBar .confirmationbox>INPUT {
+ 	font-size: 1.5em;
+ 	margin: 0px 20px;
+ }
+  
+ #appInfoPanel #buttons>SPAN {
+  	margin: 10px 10px 10px 10px;
+ }
+  
+ #appInfoPanel #buttons>SPAN>IMG {
+  	opacity: .5;
+ }
+ 
+ #appInfoPanel IMG#loader {
+ 	width: 30px;
+ 	height: 30px;
+ 	vertical-align: middle;
+ 	display: none;
+ }
+ 
+/*===============================================================================================*/
+
+/*
+ * Wsn Style 
+ * --------------------------
+ */
+
+DIV.leftCol {
+	display: inline-block;
+}
+
+DIV#items, DIV#newItems {
+	height: 500px;
+	min-width: 600px;
+	width: 63%;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+DIV#configurationUIs {
+	width: 600px;
+}
+
+DIV#newItems H1 {
+	text-align: center;
+	margin: 0px;
+	padding: 5px;
+}
+
+DIV#detailPanel {
+	display: inline-block;
+	vertical-align: top;
+	border-left:1px solid #eaeaea;
+	padding: 10px 0px 2px 5px;
+	width: 330px;
+	height: 488px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+DIV#detailPanel #pemConfigurationButton {
+	vertical-align: top;
+	opacity: .7;
+	margin-left: 50px;
+}
+
+DIV#detailPanel #CloseConfigurationModeButton {
+	margin-left: 210px;
+}
+
+DIV#detailPanel #listeningfeedback {
+	margin-left: 40px;
+}
+
+DIV#detailPanel DIV.quickhelp H2 {
+	margin: 5px 2px;
+	border-bottom: 1px solid grey;
+	color: black;
+	cursor: pointer;
+	background: url('img/expand.png') no-repeat right;
+}
+
+DIV#detailPanel TABLE  {
+ 	width: 100%;
+}
+ 
+DIV#detailPanel TABLE TD.value{
+ 	width: 100%;
+ 	vertical-align: bottom;
+}
+ 
+DIV#detailPanel TABLE INPUT[type=text] {
+ 	width: 100%;
+}
+
+DIV#addItemFeedbackOk {
+	margin: 10px 0px;
+	padding: 5px;
+	border: 2px solid darkgreen;
+	background: #d4fe7a;
+	font-size: 1.2em;
+	font-weight: bold;
+	text-align: center;	
+}
+
+DIV#addItemFeedbackFailed {
+	margin: 10px 0px;
+	padding: 5px;
+	border: 2px solid darkred;
+	background: #f97d7b;
+	font-size: 1.1em;
+	font-weight: bold;
+	text-align: center;	
+}
+
+DIV#addItemFeedbackFailed DIV#closeButtonDiv {
+	text-align: right;
+}
+
+DIV.wsnItem {
+	float:left;
+	width: 134px;
+	height: 110px;
+	margin: 10px 5px 0px 5px;
+	padding: 1px;
+	border-radius: 4px;
+	background: url('img/item_bg.png');
+	color: #697e93;
+	cursor: pointer;
+}
+
+DIV.wsnItem.selected {
+	box-shadow: 0px 0px 10px 0px #979B9C;
+}
+
+DIV.wsnItem DIV.itemHeader {
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+	height: 32px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-shadow: 0px 1px 0px #fff;
+}
+
+DIV.wsnItem DIV.itemDescription {
+	height: 60px;
+}
+
+DIV.wsnItem IMG.itemCapability {
+	float: right;
+	margin: 0px 5px 0px 0px;
+}
+
+DIV.wsnItem DIV.itemFooter {
+	text-align: center;
+}
+
+DIV.wsnItem IMG.itemTechnology {
+	float: left;
+	margin: 25px 0px 0px 5px;
+}
+
+DIV#newItems DIV.wsnItem DIV.added {
+	font-size: 1.9em;
+	font-weight: bold;
+	color: black;
+	vertical-align: top;
+	margin-top: -12px;
+}
+
+DIV.wsnItem DIV.itemLocalisation {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+DIV.itemDetails {
+	margin: 10px 10px 10px 0px;
+ 	padding-bottom: 8px;
+ 	background-color: #eaeaea;
+ 	border-radius: 8px;
+}
+
+DIV.itemDetails H1 {
+	margin: 0px 0px 10px 0px;
+ 	padding: 5px 0px 2px 5px;
+ 	color: #ffffff;
+ 	background-color: #979b9c;
+ 	font-size: 1.4em;
+ 	font-weight: bold;
+ 	border-radius: 8px 8px 0px 0px;
+ 	text-align: left;
+}
+
+DIV.itemDetails H2 {
+	margin: 10px 0px 5px 0px;
+ 	padding: 2px 0px 2px 5px;
+ 	color: #ffffff;
+ 	background-color: #979b9c;
+ 	font-size: 1.2em;
+ 	font-weight: bold;
+ 	text-align: left;
+}
+
+DIV.itemDetails H3 {
+	margin: 15px 0px 3px 0px;
+	padding: 2px 0px;
+	border-bottom: 1px solid #979B9C;
+ 	color: #979B9C;
+ 	font-size: 1.0em;
+ 	font-weight: bold;
+ 	text-align: center;
+}
+
+DIV.itemDetails SELECT {
+	max-width: 193px;
+}
+
+DIV.itemDetails #itemValue, DIV.itemDetails #itemControl {
+	margin: 10px 0px;
+	text-align: center;
+}
+
+DIV.itemDetails #itemValue #noData{
+	font-weight: bold;
+	color: orange;
+}
+
+DIV.itemDetails #loading {
+	margin: 5px 0px;
+	font-style: italic;
+	text-align: center;
+}
+
+DIV.itemDetails #itemValue TD.label {
+	text-align: right;
+	font-size: 0.8em;
+	vertical-align: top;
+	max-width: 150px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+DIV.itemDetails #itemValue TD.time {
+	font-style: italic;
+	text-align: right;
+	font-size: 0.8em;
+	vertical-align: bottom;
+}
+
+.buttons {
+ 	margin: 10px 0px;
+ 	text-align: center;
+ }  
+
+DIV.collapsibleContainer H2 {
+	margin: 5px 2px;
+	border-bottom: 1px solid grey;
+	color: black;
+	cursor: pointer;
+	background: url('img/expand.png') no-repeat right;
+}
+
+
+/*
+ * Diagnostics Style 
+ * -----------------
+ */ 
+ DIV#diagnostics H1 {
+ 	text-align: center;
+ }
+ 
+ DIV#diagnostics DIV#enoceanLogs {
+ 	width: 64%;
+ 	display: inline-block;
+ 	vertical-align: top;
+ }
+ 
+ DIV#diagnostics DIV#enoceanStats {
+ 	display: inline-block;
+ 	width: 34%;
+ }
+ 
+ DIV#diagnostics DIV#enoceanLogs > DIV > DIV {
+ 	padding: 2px 2px;
+ }
+ 
+ DIV#diagnostics DIV#enoceanLogs .discard {
+ 	background-color: darkred;
+ 	color: white;
+ }
+ 
+ DIV#diagnostics DIV#enoceanLogs .emit {
+ 	background-color: lightblue;
+ }
+ 
+ DIV#diagnostics DIV#enoceanLogs .ack {
+ 	background-color: green;
+ 	color: white;
+ }
+ 
+ DIV#diagnostics DIV#enoceanLogs .nack {
+ 	background-color: darkorange;
+ 	color: white;
+ }
+ 
+ DIV#systemEvents > DIV  {
+ 	line-height: 1.8em;
+ }
+ 
+ DIV#systemEvents SPAN.severity-low {
+ 	text-decoration: none;
+ }
+ 
+ DIV#systemEvents SPAN.severity-normal {
+ 	font-weight:bold; 
+ }
+ 
+ DIV#systemEvents SPAN.severity-high {
+ 	color: orangered;
+ 	font-weight:bold;
+ }
+ 
+ /*===============================================================================================*/
+
+/*
+ * Settings Style
+ * --------------
+ */ 
+ #settings H1 {
+ 	text-align: center;
+ }
+ 
+ #settings TABLE {
+ 	border-spacing: 0px 1px;
+ }
+
+#settings TABLE TD {
+	padding: 5px;	
+}
+
+ #settings TABLE TD.mutable {
+	background-color: #f6e3c1;	
+ }
+ 
+ #settings TABLE TD.immutable {
+	background-color: #efeeee;	
+ }
+
+ #settings TABLE TD.title {
+ 	padding-top: 10px;
+ 	font-size: 1.6em;
+ 	font-weight: bold;
+ 	background-color: #ffffff;
+ }
+ 
+ #settings TABLE TD.value {
+ 	min-width: 200px;
+ 	vertical-align: top;
+ }
+ 
+ #settings TABLE TD.error {
+ 	min-width: 200px;
+ 	vertical-align: top;
+ 	background-color: #fcb7b7;
+ 	font-weight: bold;
+ 	padding-left: 40px;	
+ }
+ 
+ #settings .embedded {
+ 	display: none;
+ }
+ 
+  /*===============================================================================================*/
+
+/*
+ * AppStore Style
+ * --------------
+ */ 
+ 
+ #content > #appstore {
+ 	box-shadow: 0px 0px 20px 0px #979b9c;
+ }
+ 
+ #appstore A, #appstore .link {
+  	color: #3559B8;
+  	text-decoration: none;
+  	cursor: pointer;
+  	font-weight: bold;
+ }
+ 
+ #appstore A:hover, #appstore .link:hover {
+  	color: #3559B8;
+  	text-decoration: underline;
+ }
+ 
+ #appstore A:visited, , #appstore .link:visited {
+  	color: #3559B8;
+ }
+ 
+ #appstore #appstoreHeader {
+ 	margin-top: 10px;
+ 	background-color: #3e6186;
+ 	height: 80px;
+ }
+ 
+ #appstore #appstoreHeader #appstoreTitle {
+ 	float: right;
+ 	margin-top: 3px;
+ 	cursor: pointer;
+ }
+ 
+ #appstore UL#trail {
+ 	margin: 0px;
+	padding: 30px 5px 5px 5px;
+	list-style-type: none;
+ }
+
+ #appstore UL#trail LI {
+	display: inline;
+	margin: 0px 10px;
+	padding: 0px;
+	font-size: 1.5em;
+	color: #eaeaea;
+ }
+
+ #appstore UL#trail LI>SPAN{
+	margin-left: 12px;
+ }
+
+ #appstore UL#trail LI>SPAN.link {
+  	color: #83d4fe;
+  	text-decoration: none;
+ }
+ 
+ #appstore UL#trail LI>SPAN.link:hover {
+  	color: #83d4fe;
+  	text-decoration: underline;
+  	cursor: pointer;
+ }
+ 
+ #appstore .networkError {
+ 	margin: 100px auto;
+ 	padding: 20px;
+ 	width: 500px;
+ 	background-color: #f97d7b;
+ 	border-radius: 8px;
+ 	box-shadow: 0px 0px 20px 0px #979b9c;
+ }
+ 
+ #appstore .networkError .label {
+ 	color: #000000;
+ }
+ 
+ #appstore .networkError .helpmsg { 
+ 	margin-top: 20px;
+ 	font-size: 1.4em;
+ }
+ 
+ #appstore #appstoreWorkspace {
+ 	background-color: #dde2e8;
+ 	min-height: 450px;
+ 	padding: 0px;
+ }
+ 
+ #appstore #appstoreWorkspace #leftSpace {
+ 	display: inline-block;
+ 	vertical-align: top;
+ 	width: 200px;
+ 	text-align: center;
+ }
+ 
+ #appstore #appstoreWorkspace #leftSpace>DIV{
+ 	padding: 1px 5px;
+ 	text-align: left;
+ }
+ 
+ #appstore #appstoreWorkspace #leftSpace>DIV{
+ 	padding-left: 5px;
+ 	text-align: left;
+ }
+ 
+ #appstore #appstoreWorkspace #leftSpace>DIV UL{
+ 	margin: 0px;
+ 	padding-left: 20px;
+ 	text-align: left;
+ 	list-style-type: none;
+ }
+ 
+ #appstore #appstoreWorkspace #leftSpace TABLE {
+ 	margin: 5px 0px;
+ 	border-collapse: collapse;
+ 	width: 100%
+ 	
+ }
+ 
+ #appstore #appstoreWorkspace #leftSpace TABLE TD {
+ 	border-bottom: 1px solid #eaeaea;
+ 	font-size: 0.8em;
+ }
+ 
+ #appstore #appstoreWorkspace #leftSpace TABLE TD.titleRow {
+ 	font-weight: bold;
+ 	font-size: 1.0em;
+ }
+ 
+ #appstore #appstoreWorkspace #leftSpace TABLE TD.titleRow.left {
+ 	text-align: left;
+ }
+ 
+ #appstore #appstoreWorkspace #leftSpace TABLE TD.titleRow.right {
+ 	text-align: right;
+ }
+ 
+ #appstore #appstoreWorkspace #leftSpace TABLE TD.quantity {
+ 	text-align: right;
+ }
+ 
+ #appstore #appstoreWorkspace #leftSpace>UL {
+	padding-left: 40px;
+	list-style-type: none;
+	line-height: 1.5em;
+	font-size: 1.1em;	
+	text-align: left;
+}
+
+ #appstore #appstoreWorkspace #leftSpace>UL LI {
+	color: #424242; /*Tungstene*/
+	font-weight: bold;
+	cursor: pointer;
+ }
+
+ #appstore #appstoreWorkspace #leftSpace>UL LI:hover {
+	text-decoration: underline;
+ }
+ 
+ #appstore #appstoreWorkspace #leftSpace H1 {
+ 	color: #424242; /*Tungstene*/
+ }
+ 
+ #appstore #appstoreWorkspace #leftSpace H2 {
+ 	padding-left: 5px;
+ 	color: #424242; /*Tungstene*/
+ 	text-align: left;
+ }
+ 
+ #appstore #appstoreWorkspace #leftSpace .label {
+ 	color: #424242; /*Tungstene*/
+ }
+ 
+ #appstore #appstoreWorkspace #mainSpace {
+ 	display: inline-block;
+ 	min-height: 450px;
+ 	min-width: 740px;
+ 	width: 78%;
+ }
+ 
+ #appstore #appstoreWorkspace #categories {
+ 	display: none;
+ }
+ 
+ #appstore #appstoreWorkspace #banner {
+	height: 150px;
+	padding: 0px;
+ }
+ 
+ #appstore #appstoreWorkspace #slideshow {
+	width: 700px;
+	height: 150px;
+	padding: 0px;
+	display: none;
+ }
+
+ #appstore #appstoreWorkspace #slideshow .slide {
+	width: 700px;
+	height: 150px;
+	position: absolute;
+ }
+
+ #appstore #appstoreWorkspace .panel {
+	margin: 14px 15px 20px 15px;
+	padding: 5px;
+	border-radius: 8px;
+	background-color: #ffffff;
+	min-height: 100px;
+ }
+
+ #appstore #appstoreWorkspace .panel H1 {
+	margin-top: -4px;
+	margin-left: 5px;
+	color: #273F57;
+	font-size: 1.4em;
+ }
+ 
+ #appstore #appstoreWorkspace #installButton {
+ 	text-align: right;
+ }
+ 
+ #appstore #appstoreWorkspace #installLoader {
+ 	text-align: right;
+ 	display: none;
+ }
+ 
+ #appstore #appstoreWorkspace #installLoader>IMG {
+ 	margin-right: 35px;
+ 	width: 30px;
+ 	height: 30px;
+ }
+ 
+ .app {
+	display: inline-block;
+	padding: 5px 5px;
+	width: 100px;
+	overflow: hidden;
+	margin: 5px 20px;
+	font-size: 0.9em;
+	text-align: center;
+	border-radius: 8px;
+}
+
+.app:hover {
+	box-shadow: 0px 0px 3px 0px #979b9c;
+}
+
+.app .appname {
+	font-weight: bold;
+}
+
+.app .appversion {
+	font-size: 0.9em;
+}
+
+.app .cat {
+	font-size: 0.9em;
+}
+ 
+ #appstore #leftSpace IMG {
+ 	margin-top: 30px;
+ } 
+
+ #appstore #appDetails {
+ 	margin-left: 30px;
+ }
+
+ #appstore #appDetails H1{
+ 	font-size: 2.6em;
+ 	color: #14a43e;
+ }
+
+ #appstore #appDetails #vendor {
+	display: block;
+	margin-top: -20px;
+	margin-bottom: 10px;
+}
+
+#appstore #appDetails #category {
+	display: block;
+	margin-bottom: 40px;
+}
+
+#appstore #appDetails #screenshots DIV {
+	width: 3000px;
+}
+
+#appstore #appDetails #screenshots {
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
+
+#appstore #vendorDetails {
+	padding: 20px;
+}
+
+#appstore #vendorDetails #description {
+	float: right;
+	margin-right: 50px;
+	width: 550px;
+}
+
+
+  /*===============================================================================================*/
+
+/*
+ * Upgrade dialog Style
+ * --------------------
+ */ 
+
+#upgradeProgressPath {
+	text-align: center;
+	padding: 0px;
+	border-bottom: 2px solid #DEEDF7; 
+}
+
+#upgradeProgressPath > SPAN {
+	display: inline-block;
+	margin: 0px 5px;
+	padding: 10px;
+	border-radius: 8px 8px 0px 0px;
+	color: #616161;
+}
+
+#upgradeProgressPath > SPAN.selected {
+	font-weight: bold;
+	color: #000;
+	background: #DEEDF7;
+}
+
+#upgradeDialog .message {
+	margin: 20px 0px;		
+}
+
+#upgradeDialog .message IMG {
+	margin-top: 5px;		
+}
+
+#upgradeDialog .message.error {
+	padding-left: 40px;
+	background-image: url(img/error.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+	color: #ff0000;
+	font-weight: bold;
+	min-height: 35px;	
+}
+
+.ui-progressbar {
+    position: relative;
+  }
+  
+.progress-label {
+    position: absolute;
+	width: 100%;
+	text-align: center;
+    top: 4px;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #fff;
+  }

@@ -1,0 +1,35 @@
+{	
+	"appsconfiguration_title": "Configuration des applications",
+	
+	"appsconfiguration_qh": "Touchez ou cliquez sur l'icône de l'application que vous souhaitez configurer.",
+	
+	"appsconfiguration_w_title": "Placetouch / Configuration des applications",
+	
+	"cannotStart" : "L'application ne peut pas être démarrée. Il est possible que quelqu'un d'autre l'ait déjà mise en route.",
+	
+	"cannotStop" : "L'application ne peut pas être arrêtée. Il est possible que quelqu'un d'autre l'ait déjà arrêtée.",
+	
+	"cannotUninstall" : "L'application ne peut pas être désinstallée. Il est possible que quelqu'un d'autre l'ait déjà désinstallée.",
+	
+	"configure" : "Configurer",
+	
+	"downtime" : "Temps d'inactivité",
+	
+	"paused" : "Inactive",
+	
+	"running" : "Active",
+	
+	"start" : "Démarrer",
+	
+	"status" : "Statut",
+	
+	"stop" : "Arrêter",
+	
+	"uninstall" : "Désinstaller",
+	
+	"uptime" : "Temps de fonctionnement",
+	
+	"vendor" : "Vendeur",
+	
+	"version" : "Version"
+}

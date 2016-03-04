@@ -1,0 +1,35 @@
+{	
+	"appsconfiguration_title": "Configuration of installed applications",
+	
+	"appsconfiguration_qh": "Touch or click on the icon of the application to configure.",
+	
+	"appsconfiguration_w_title": "Placetouch / App Configuration",
+	
+	"cannotStart" : "Cannot start the application. It should had been started by someone else in the meantime.",
+	
+	"cannotStop" : "Cannot stop the application. It should had been stopped by someone else in the meantime.",
+	
+	"cannotUninstall" : "Cannot uninstall the application. It should had been uninstalled by someone else in the meantime.",
+	
+	"configure" : "Configure",
+	
+	"downtime" : "Downtime",
+	
+	"paused" : "Paused",
+	
+	"running" : "Running",
+	
+	"start" : "Start",
+	
+	"status" : "Status",
+	
+	"stop" : "Stop",
+	
+	"uninstall" : "Uninstall",
+	
+	"uptime" : "Uptime",
+	
+	"vendor" : "Vendor",
+	
+	"version" : "Version"
+}
